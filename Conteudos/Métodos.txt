@@ -1,0 +1,113 @@
+GET
+http://127.0.0.1:8000/clientes/
+
+PUT
+http://127.0.0.1:8000/cliente/5/
+{
+        "nome": "Erica Maria",
+        "sexo": 2,
+        "data_nasc": "2020-07-18",
+        "telefone": "(86) 99823-6024",
+        "tipo": 2,
+        "endereco": 2
+}
+
+POST
+http://127.0.0.1:8000/clientes/
+{
+        "nome": "José Artur",
+        "sexo": 2,
+        "data_nasc": "2020-07-18",
+        "telefone": "(86) 99823-6024",
+        "tipo": 2,
+        "endereco": 2
+}
+
+
+DELETE
+http://127.0.0.1:8000/cliente/6/
+
+
+
+
+
+---- CADASTRO NO BD
+---- PRIMEIRO AS TABELAS DIMENSÃO
+Setores
+- GET: http://127.0.0.1:8000/setores/
+- DELETE: http://127.0.0.1:8000/setor/6/
+- PUT: http://127.0.0.1:8000/setor/5/
+  {JSON}
+- POST: http://127.0.0.1:8000/setores/
+  {JSON}
+
+Categorias
+- GET: http://127.0.0.1:8000/categorias/
+- DELETE: http://127.0.0.1:8000/categoria/6/
+- PUT: http://127.0.0.1:8000/categoria/5/
+  {JSON}
+- POST: http://127.0.0.1:8000/categorias/
+  {JSON}
+
+Endereços
+- GET: http://127.0.0.1:8000/enderecos/
+- DELETE: http://127.0.0.1:8000/endereco/6/
+- PUT: http://127.0.0.1:8000/endereco/5/
+  {JSON}
+- POST: http://127.0.0.1:8000/enderecos/
+  {JSON}
+
+---- SEGUNDO AS TABELAS FATO
+
+Clientes
+- GET: http://127.0.0.1:8000/clientes/
+- DELETE: http://127.0.0.1:8000/cliente/6/
+- PUT: http://127.0.0.1:8000/cliente/5/
+  {JSON}
+- POST: http://127.0.0.1:8000/clientes/
+  {JSON}
+
+Funcionários
+- GET: http://127.0.0.1:8000/funcionarios/
+- DELETE: http://127.0.0.1:8000/funcionario/6/
+- PUT: http://127.0.0.1:8000/funcionario/5/
+  {JSON}
+- POST: http://127.0.0.1:8000/funcionarios/
+  {JSON}
+
+Produtos
+- GET: http://127.0.0.1:8000/produtos/
+- DELETE: http://127.0.0.1:8000/produto/6/
+- PUT: http://127.0.0.1:8000/produto/5/
+  {JSON}
+- POST: http://127.0.0.1:8000/produtos/
+  {JSON}
+
+Vendas
+- GET: http://127.0.0.1:8000/vendas/
+- DELETE: http://127.0.0.1:8000/venda/6/
+- PUT: http://127.0.0.1:8000/venda/5/
+  {JSON}
+- POST: http://127.0.0.1:8000/vendas/
+  {JSON}
+
+Produtos da Vendas
+- GET: http://127.0.0.1:8000/produtos-vendas/
+- DELETE: http://127.0.0.1:8000/produtos-venda/6/
+- PUT: http://127.0.0.1:8000/produtos-venda/5/
+  {JSON}
+- POST: http://127.0.0.1:8000/produtos-vendas/
+  {JSON}
+
+
+
+
+----- POWER BI
+http://127.0.0.1:8000/setores/
+http://127.0.0.1:8000/categorias/
+http://127.0.0.1:8000/enderecos/
+http://127.0.0.1:8000/clientes/
+http://127.0.0.1:8000/funcionarios/
+http://127.0.0.1:8000/produtos/
+http://127.0.0.1:8000/vendas/
+http://127.0.0.1:8000/produtos-vendas/
