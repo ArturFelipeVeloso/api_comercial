@@ -16,7 +16,7 @@ class Categoria(models.Model):
 
 class Produto(models.Model):
     nome = models.CharField(max_length=200, verbose_name='Nome do produto')
-    preco = models.DecimalField(verbose_name='Preço', max_digits=5, decimal_places=2) # modelo -> 10.000,50
+    preco = models.DecimalField(verbose_name='Preço', max_digits=10, decimal_places=2) # modelo -> 10.000,50
     categorias = models.ForeignKey(Categoria, on_delete=models.CASCADE, verbose_name='Categoria')
     estoque = models.PositiveIntegerField(verbose_name='Estoque')
 
